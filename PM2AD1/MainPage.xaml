@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2AD1.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Operaciones básicas" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <!--<Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>-->
+        <!--<Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>-->
+
+        <Entry x:Name="txtNum1" Placeholder="Ingrese numero 1" Keyboard="Numeric" ></Entry>
+
+        <Entry x:Name="txtNum2" Placeholder="Ingrese numero 2" Keyboard="Numeric"></Entry>
+
+        <Button Text="Suma" x:Name="btnSuma" BackgroundColor="LightBlue" Clicked="btnSuma_Clicked"></Button>
+
+        <Button Text="Resta" x:Name="btnResta" BackgroundColor="LightBlue" Clicked="btnResta_Clicked"></Button>
+
+        <Button Text="División" x:Name="btnDivision" BackgroundColor="LightBlue" Clicked="btnDivision_Clicked"></Button>
+
+        <Button Text="Multiplicación" x:Name="btnMultiplicacion" BackgroundColor="LightBlue" Clicked="btnMultiplicacion_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>

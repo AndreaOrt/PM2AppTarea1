@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PM2AD1.DatosPersonaPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Datos Personales" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Entry x:Name="txtNombre" Placeholder="Nombre" Keyboard="Text"></Entry>
+            <Entry x:Name="txtApellidos" Placeholder="Apellidos" Keyboard="Text"></Entry>
+            <Entry x:Name="txtEdad" Placeholder="Edad" Keyboard="Numeric"></Entry>
+            <Entry x:Name="txtCorreo" Placeholder="Correo Electrónico" Keyboard="Email"></Entry>
+
+            <Button x:Name="btnEnviarInfo" Text="Enviar Información" BackgroundColor="LightBlue" Clicked="btnEnviarInfo_Clicked"></Button>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
